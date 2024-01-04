@@ -26,7 +26,7 @@ const Projects = () => {
     return (
         <div id='projects' className='projects'>
             <div className="heading">
-                <h2></h2>
+                <h2>PROJECTS</h2>
             </div>
                 <div className="projects-container">
                     <Slider {...settings}>
