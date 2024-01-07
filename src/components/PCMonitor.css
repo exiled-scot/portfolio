@@ -1,0 +1,34 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pc-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  /* Additional styling properties as per your requirements */
+  color: green;
+}
+.square {
+  position: absolute;
+  width: 415px; /* Adjust the size of the square as per your requirement */
+  height: 368px;
+  background-color: red; /* Adjust the background color as per your requirement */
+  top: 41%; /* Adjust the position of the square vertically as per your requirement */
+  left: 50%; /* Adjust the position of the square horizontally as per your requirement */
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
