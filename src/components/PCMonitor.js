@@ -30,6 +30,8 @@ const PCMonitor = () => {
 
     return (
         <div className="image-container">
+            <div class="noise"></div>
+            <div class="overlay"></div>
             <img id="pc-image" src={IMG} alt="Something went wrong" />
             <div className="square"></div>
         </div>
