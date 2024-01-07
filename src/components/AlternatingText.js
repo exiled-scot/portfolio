@@ -2,11 +2,10 @@ import React from 'react';
 
 const AlternatingText = ({ text, image, position }) => {
   const isLeftPosition = position === 'left';
-  const isNarrowScreen = window.innerWidth <= 1200; // Check if screen width is narrow
 
   return (
     <div
-      className={`at-info ${isLeftPosition && isNarrowScreen ? 'at-info-reverse' : ''}`}
+      className={`at-info ${isLeftPosition ? 'at-info-reverse' : ''}`}
     >
       {isLeftPosition ? (
         <>

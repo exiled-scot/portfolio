@@ -194,21 +194,15 @@ a, a:active, a:hover {
   justify-content: center;
   margin: 0 5%;
   padding: 10rem auto;
+  padding-top: 10rem;
   padding-bottom: 10rem;
-  align-items: center;
-}
-
-.at-info-reverse { /* New class for reversed layout */
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .at-img {
-  width: 50%;
-  padding: 2rem auto;
-  margin: 2rem auto; /* Added */
+  height: 100%;
   border: 5px solid black;
-  border-radius: 20px;
+  border-radius: 10rem;
   clip-path: border-box;
   overflow: hidden;
 }
