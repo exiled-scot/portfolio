@@ -1,3 +1,4 @@
+
 .image-container {
     position: relative;
     display: flex;
@@ -135,38 +136,37 @@
 .terminal-output {
     white-space: pre-wrap;
     overflow-y: scroll;
-    max-height: 85%;
+    max-height: 80%;
     padding: 0 1vw;
     text-align: left;
-    padding-left: 4.5rem;
+    padding-left: 4.5vw;
+    font-size: 3.8rem;
 }
 
 .console-input {
-    margin-top: 0.9rem;
+    margin-top: 0.9vw;
     text-align: left;
     width: 100%;
     padding: 0 1vw;
     position: absolute;
     left: 0;
+    bottom: 0;
     background-color: transparent;
     border: none;
     outline: none;
     font-family: 'Inconsolata', Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 4vw;
     color: rgba(128, 255, 128, 0.8);
     text-shadow:
         0 0 1ex rgba(51, 255, 51, 1),
         0 0 2px rgba(255, 255, 255, 0.8);
-    padding-left: 6.5rem;
+    padding-left: 6.vw;
+    padding-bottom: 2vw;
 }
 
 .input-container {
-    padding: 0 10rem;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
-    padding-left: 4rem;
+    bottom: 0;
 }
 
-textarea {
-    resize: none;
-}

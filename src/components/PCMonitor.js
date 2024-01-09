@@ -32,22 +32,23 @@ const PCMonitor = () => {
     };
 
     return (
-        <div className={`image-container ${isInputShrunk ? 'shrink' : ''}`}>
-            <img className="pc-image" src={IMG} alt="Something went wrong" />
-            <div className="noise"></div>
-            <div className="overlay"></div>
-            <div className="square" onMouseOver={handleMouseOver}>
-                <pre className="terminal-output">{output}</pre>
-                <div className="input-container">
-                    <span className="input-symbol">&gt;</span>
-                    <textarea
-                        className="console-input"
-                        rows="1"
-                        value={inputValue}
-                        onChange={handleInputChange}
-                        onKeyPress={handleEnterPress}
-                        ref={inputRef}
-                    ></textarea>
+        <div className="pc-monitor">
+            <div className={`image-container ${isInputShrunk ? 'shrink' : ''}`}>
+                <img className="pc-image" src={IMG} alt="Something went wrong" />
+                <div className="noise"></div>
+                <div className="overlay"></div>
+                <div className="square" onMouseOver={handleMouseOver}>
+                    <pre className="terminal-output">{output}</pre>
+                    <div className="input-container">
+                        <textarea
+                            className="console-input"
+                            rows="1"
+                            value={inputValue}
+                            onChange={handleInputChange}
+                            onKeyPress={handleEnterPress}
+                            ref={inputRef}
+                        ></textarea>
+                    </div>
                 </div>
             </div>
         </div>
