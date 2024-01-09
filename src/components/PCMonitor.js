@@ -3,10 +3,10 @@ import IMG from '../assets/pc.png';
 import './PCMonitor.css';
 
 const PCMonitor = () => {
-    const [inputValue, setInputValue] = useState(''); // State to hold the input value
-    const [output, setOutput] = useState(''); // State to hold the console output
-    const [isInputShrunk, setIsInputShrunk] = useState(false); // State to track if the input field is shrunk
-    const inputRef = useRef(null); // Create a ref for the input field
+    const [inputValue, setInputValue] = useState('');
+    const [output, setOutput] = useState('');
+    const [isInputShrunk, setIsInputShrunk] = useState(false);
+    const inputRef = useRef(null);
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -15,15 +15,20 @@ const PCMonitor = () => {
 
     const handleEnterPress = (e) => {
         if (e.key === 'Enter') {
-            // Process the command here and update the output
-            setOutput((prevOutput) => `${prevOutput}${inputValue}\n`);
+            setOutput((prevOutput) => {
+                const newOutput = `${prevOutput}${inputValue}\n`;
+                return newOutput.slice(0, -1); // Remove the last character ('\n')
+            });
             setInputValue('');
             setIsInputShrunk(false);
+            if (e.target.value.length > 0) {
+                e.target.value = ''; // Clear the textarea value directly
+            }
         }
     };
 
     const handleMouseOver = () => {
-        inputRef.current.focus(); // Focus the input field when mouse is over
+        inputRef.current.focus();
     };
 
     return (
@@ -32,14 +37,18 @@ const PCMonitor = () => {
             <div className="noise"></div>
             <div className="overlay"></div>
             <div className="square" onMouseOver={handleMouseOver}>
-                <pre className="terminal-output">{output}</pre> {/* Display console output */}
-                <textarea
-                    className="console-input"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                    onKeyPress={handleEnterPress}
-                    ref={inputRef} // Set the ref for the input field
-                ></textarea> {/* Input field */}
+                <pre className="terminal-output">{output}</pre>
+                <div className="input-container">
+                    <span className="input-symbol">&gt;</span>
+                    <textarea
+                        className="console-input"
+                        rows="1"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        onKeyPress={handleEnterPress}
+                        ref={inputRef}
+                    ></textarea>
+                </div>
             </div>
         </div>
     );

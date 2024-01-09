@@ -133,14 +133,16 @@
 }
 
 .terminal-output {
-  white-space: pre-wrap;
-  overflow-y: scroll;
-  max-height: 85%;
-  padding: 0 1vw;
-  text-align: left;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    max-height: 85%;
+    padding: 0 1vw;
+    text-align: left;
+    padding-left: 4.5rem;
 }
 
 .console-input {
+    margin-top: 0.9rem;
     text-align: left;
     width: 100%;
     padding: 0 1vw;
@@ -155,4 +157,16 @@
     text-shadow:
         0 0 1ex rgba(51, 255, 51, 1),
         0 0 2px rgba(255, 255, 255, 0.8);
+    padding-left: 6.5rem;
+}
+
+.input-container {
+    padding: 0 10rem;
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 4rem;
+}
+
+textarea {
+    resize: none;
 }
