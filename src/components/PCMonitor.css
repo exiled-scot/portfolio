@@ -162,6 +162,7 @@
         0 0 2px rgba(255, 255, 255, 0.8);
     padding-left: 6.vw;
     padding-bottom: 2vw;
+    white-space: nowrap;
 }
 
 .input-container {
