@@ -174,7 +174,7 @@
     border: none;
     outline: none;
     font-family: 'Inconsolata', Helvetica, sans-serif;
-    font-size: 4vw;
+    font-size: 2vw;
     color: rgba(128, 255, 128, 0.8);
     text-shadow:
         0 0 1ex rgba(51, 255, 51, 1),
@@ -185,7 +185,6 @@
 }
 
 .input-container {
-    font-size: 4rem;
     text-align: left;
     bottom: 0;
 }

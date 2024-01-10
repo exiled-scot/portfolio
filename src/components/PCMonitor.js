@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import IMG from '../assets/pc.png';
 import './PCMonitor.css';
 
 const PCMonitor = () => {
     const [inputValue, setInputValue] = useState('');
-    const [output, setOutput] = useState('');
+    const [output, setOutput] = useState('Hello, friend\n');
     const [isInputShrunk, setIsInputShrunk] = useState(false);
     const inputRef = useRef(null);
 
@@ -16,8 +16,8 @@ const PCMonitor = () => {
     const handleEnterPress = (e) => {
         if (e.key === 'Enter') {
             setOutput((prevOutput) => {
-                const newOutput = `${prevOutput}${inputValue}\n`;
-                return newOutput.slice(0, -1); // Remove the last character ('\n')
+                const newOutput = `${prevOutput}${inputValue}`;
+                return newOutput;
             });
             setInputValue('');
             setIsInputShrunk(false);
@@ -30,6 +30,12 @@ const PCMonitor = () => {
     const handleMouseOver = () => {
         inputRef.current.focus();
     };
+    
+    // Run this effect only once when the component is first rendered
+    useEffect(() => {
+        // Focus the input when the component first loads
+        inputRef.current.focus();
+    }, []);
 
     return (
         <div className="pc-monitor">
