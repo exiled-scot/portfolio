@@ -1,11 +1,30 @@
-
 .image-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* Set the height of the container to match the viewport height */
+}
+
+@media (max-height: 1200px) {
+    .image-container {
+        width: 50vw;
+        left: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .image-container {
+        width: 50vw;
+        left: 25%;
+    }
+}
+
+@media (min-width: 1920px) and (min-height: 1200px) {
+    .image-container {
+        width: 100vh;
+        left: 22%;
+    }
 }
 
 .pc-image {
@@ -170,4 +189,3 @@
     text-align: left;
     bottom: 0;
 }
-
