@@ -1,25 +1,17 @@
-import IMG from '../assets/Kali.png';
-import AlternatingText from './AlternatingText';
+import PCMonitor from './PCMonitor';
 
 const About = () => {
     return (
         <div id="about" className="about">
             <h1 className="about-heading">About Me</h1>
-            <div>
-                <AlternatingText
-                    text="I am a Scottish software developer and nerd. I like tinkering with code, breaking things and building them back stronger."
-                    image={IMG}
-                    position="left"
-                />
+            <div className='at-container'>
+                <div className='at-left'>
+                    <p className='at-text'>"I am a full stack software developer and tech enthusiast from Scotland. I worked as a developer for a boutique penetration testing company near Edinburgh where I had the pleasure of securing other peoples' work against common and technically sophisticated attackers."</p>
+                    <div className='pc-monitor'>
+                        <PCMonitor />
+                    </div>
+                </div>
             </div>
-            <div>
-                <AlternatingText
-                    text="I am a Scottish software developer and nerd. I like tinkering with code, breaking things and building them back stronger."
-                    image={IMG}
-                    position="right"
-                />
-            </div>
-
         </div>
     )
 }
