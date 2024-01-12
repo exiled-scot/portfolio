@@ -9,7 +9,7 @@ a, a:active, a:hover {
 }
 
 .scroller {
-  height: 1000px;
+  height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
