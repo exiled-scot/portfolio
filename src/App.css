@@ -254,12 +254,17 @@ a, a:active, a:hover {
 }
 
 .at-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   padding: 0 5rem;
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   line-height: 2;
-  font-size: 3rem
+  font-size: 3rem;
+  margin-bottom: 6rem;
 }
 
 .at-container {
