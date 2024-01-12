@@ -54,7 +54,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Inconsolata', Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgba(128, 255, 128, 0.8);
     text-shadow:
         0 0 1ex rgba(51, 255, 51, 1),
@@ -152,6 +152,25 @@
     }
 }
 
+.console-input,
+.terminal-output,
+.circle {
+    overflow: hidden;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow: -moz-scrollbars-none; /* Firefox */
+  overflow: auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Chrome, Safari, Opera */
+}
+
+
 .terminal-output {
     white-space: pre-wrap;
     overflow-y: scroll;
@@ -159,7 +178,7 @@
     padding: 0 1vw;
     text-align: left;
     padding-left: 3.5vw;
-    font-size: 3.8rem;
+    font-size: 2rem;
 }
 
 .console-input {

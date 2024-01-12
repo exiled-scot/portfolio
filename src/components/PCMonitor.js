@@ -64,7 +64,7 @@ const PCMonitor = () => {
                     <div className="overlay"></div>
                     <img className="cddrive" src={cddrive} />
                     <div className="square" onMouseOver={handleMouseOver}>
-                        <pre className="terminal-output">{output}</pre>
+                        <pre className="terminal-output hide-scrollbar">{output}</pre>
                         <div className="input-container">
                             <textarea
                                 className="console-input"
