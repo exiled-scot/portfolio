@@ -158,7 +158,7 @@
     max-height: 80%;
     padding: 0 1vw;
     text-align: left;
-    padding-left: 4.5vw;
+    padding-left: 3.5vw;
     font-size: 3.8rem;
 }
 
@@ -187,4 +187,28 @@
 .input-container {
     text-align: left;
     bottom: 0;
+}
+.circle {
+    position: absolute;
+    width: 2.5%;
+    height: 2.5%;
+    background-color: red;
+    border-radius: 50%;
+    top: 67.7%;
+    left: 66.6%;
+    z-index: 1;
+}
+.cddrive {
+    object-fit: cover;
+    width: 16.5%;
+    height: 16.5%;
+    clip-path: polygon(0 36%, 100% 36%, 100% 20%, 0% 20%);
+    position: absolute;
+    top: 55.8%;
+    left: 31.3%;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
 }
