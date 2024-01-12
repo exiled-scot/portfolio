@@ -10,13 +10,27 @@ import './App.css';
 const App = () => {
   return (
     <div id="app" className="App">
-      <Header />
-      <Body />
-      <About />
-      <Travels />
-      <Projects />
-      <Skills />
-      <Footer />
+      <article class="scroller">
+        <Header />
+        <section>
+          <Body />
+        </section>
+        <section>
+          <About />
+        </section>
+        <section>
+          <Travels />
+        </section>
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <Skills />
+        </section>
+        <section>
+          <Footer />
+        </section>
+      </article>
     </div>
   );
 }
