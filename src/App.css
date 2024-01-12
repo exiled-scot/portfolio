@@ -259,41 +259,16 @@ a, a:active, a:hover {
   text-align: left;
   font-size: 2rem;
   line-height: 2;
-  font-size: 2.5rem
+  font-size: 3rem
 }
 
-.at-info {
+.at-container {
   display: flex;
-  justify-content: center;
-  margin: 0 5%;
-  padding: 10rem auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  align-items: flex-start;
+  flex-direction: row;
 }
 
-.at-img {
-  height: 100%;
-  border: 5px solid black;
-  border-radius: 10rem;
-  clip-path: border-box;
-  overflow: hidden;
-}
-
-@media (max-width: 1200px) {
-  .at-info {
-    flex-direction: column;
-  }
-
-  .at-text {
-    width: 100%;
-  }
-
-  .at-img {
-    width: 100%;
-    height: auto;
-    padding: 2rem auto;
-  }
+.pc-monitor {
+  flex: 1;
 }
 
 /* End About Section  */
