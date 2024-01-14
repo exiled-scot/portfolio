@@ -251,6 +251,15 @@ a, a:active, a:hover {
   justify-content: flex-start;
 }
 
+/* Styles for portrait mode */
+@media (orientation: portrait) {
+  /* Add your CSS styles for portrait mode here */
+  .about {
+    min-height: 50vh;
+
+  }
+}
+
 .about-heading {
   font-size: 5rem;
   text-transform: uppercase;
