@@ -27,7 +27,9 @@ const App = () => {
         <section>
           <Skills />
         </section>
+        <section>
           <Footer />
+        </section>
       </article>
     </div>
   );
