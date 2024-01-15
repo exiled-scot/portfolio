@@ -362,17 +362,17 @@ a:hover {
 /* End About Section  */
 
 /* Projects section */
-.projects {
-  background-color: #e9d5a1;
-  height: 65vh;
-  margin-top: -2rem;
-}
-
-.heading {
+.projects-heading {
   font-size: 5rem;
   text-transform: uppercase;
   padding: 1rem;
   letter-spacing: .3rem;
+}
+
+.projects {
+  background-color: #e9d5a1;
+  height: 65vh;
+  margin-top: -2rem;
 }
 
 .projects-container {
@@ -459,9 +459,6 @@ a:hover {
   }
   .projects {
     height: 100vh;
-  }
-  .heading {
-    font-size: 2rem;
   }
 }
 
