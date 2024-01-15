@@ -10,7 +10,7 @@ import './App.css';
 const App = () => {
   return (
     <div id="app" className="App">
-      <article class="scroller">
+      <article className="scroller">
         <Header />
         <section>
           <Body />
@@ -22,7 +22,7 @@ const App = () => {
           <Travels />
         </section>
         <section>
-          <Projects />
+        <Projects />
         </section>
         <section>
           <Skills />
