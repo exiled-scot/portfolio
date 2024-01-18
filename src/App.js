@@ -1,7 +1,6 @@
 import Header from './components/Header';
 import Body from './components/Body';
 import About from './components/About';
-import Travels from './components/Travels';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
@@ -17,9 +16,6 @@ const App = () => {
         </section>
         <section>
           <About />
-        </section>
-        <section>
-          <Travels />
         </section>
         <section>
         <Projects />
