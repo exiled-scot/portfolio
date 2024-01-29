@@ -1,4 +1,5 @@
 import { FaJava, FaPython, FaJs, FaReact, FaHtml5, FaCss3, FaGithub, FaDocker } from "react-icons/fa";
+import { TbBrandTailwind } from "react-icons/tb";
 import { DiRubyRough } from "react-icons/di";
 
 const Skills = () => {
@@ -19,6 +20,11 @@ const Skills = () => {
             "name" : "CSS",
             "icon" : FaCss3
         },
+        {
+            "name" : "Tailwind",
+            "icon" : TbBrandTailwind
+        },
+        
         {
             "name" : "Git",
             "icon" : FaGithub
