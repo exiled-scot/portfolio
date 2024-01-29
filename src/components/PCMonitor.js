@@ -5,9 +5,7 @@ import './PCMonitor.css';
 const PCMonitor = () => {
     const [inputValue, setInputValue] = useState('');
     const [output, setOutput] = useState('Hello, friend\n');
-    const [isInputShrunk, setIsInputShrunk] = useState(false);
     const [circleColor, setCircleColor] = useState('red');
-    const [isButtonClicked, setIsButtonClicked] = useState(false);
     const [isComponentVisible, setComponentVisible] = useState(false);
 
     const cddrive = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qQx2cwjHkLoWAEHj31dz7QHaE7%26pid%3DApi&f=1&ipt=e57d5bcf01be62cb5540bd1a0d071cb51a9786ce23e3a02d18b01196f5b44b2f&ipo=images';
@@ -16,7 +14,6 @@ const PCMonitor = () => {
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
-        setIsInputShrunk(e.target.value !== '');
     };
 
     const handleEnterPress = (e) => {
@@ -26,7 +23,6 @@ const PCMonitor = () => {
                 return newOutput;
             });
             setInputValue('');
-            setIsInputShrunk(false);
             if (e.target.value.length > 0) {
                 e.target.value = ''; // Clear the textarea value directly
             }
@@ -35,7 +31,6 @@ const PCMonitor = () => {
 
     const handleButtonClick = () => {
         setCircleColor((prevColor) => (prevColor === 'red' ? 'green' : 'red'));
-        setIsButtonClicked(true);
         setComponentVisible((prevState) => !prevState);
     };
 
@@ -62,7 +57,7 @@ const PCMonitor = () => {
                 <div className={`pc-components ${isComponentVisible ? '' : 'hidden'}`}>
                     <div className="noise"></div>
                     <div className="overlay"></div>
-                    <img className="cddrive" src={cddrive} />
+                    <img className="cddrive" alt="cd-drive" src={cddrive} />
                     <div className="square" onMouseOver={handleMouseOver}>
                         <pre className="terminal-output hide-scrollbar">{output}</pre>
                         <div className="input-container">
