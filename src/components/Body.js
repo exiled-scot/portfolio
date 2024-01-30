@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Avatar from '../assets/Avatar.png';
+import { FaGrav } from "react-icons/fa";
+
 
 const Body = () => {
     // Starting point: https://codepen.io/FacepalmRobot/pen/dGBKJB    
@@ -73,6 +75,17 @@ const Body = () => {
                                 <FaGithub />
                             </i>{' '}
                         </a>
+                        <a
+                            href="https://nihilanth.co.uk/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="icon-link"
+                        >
+                            <i>
+                                <FaGrav />
+                            </i>
+                        </a>
+
                         <a
                             href="https://www.linkedin.com/in/scott-stevenson-676bb2a1/"
                             target="_blank"
