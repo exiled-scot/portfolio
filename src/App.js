@@ -25,8 +25,6 @@ const App = () => {
           </section>
           <section>
             <Projects />
-          </section>
-          <section>
             <Skills />
           </section>
           <section>
