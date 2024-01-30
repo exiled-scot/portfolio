@@ -1,4 +1,3 @@
-import PCMonitor from './PCMonitor';
 import './About.css';
 
 const About = () => {
@@ -8,7 +7,6 @@ const About = () => {
             <div className='at-container'>
                 <p className='at-text'>I am a full stack software developer and tech enthusiast from Scotland. I worked as a developer for a boutique penetration testing company near Edinburgh where I had the pleasure of securing other peoples' work against common and technically sophisticated attackers.</p>
                 <div className='pc-monitor'>
-                    <PCMonitor />
                 </div>
             </div>
         </div>
