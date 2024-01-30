@@ -18,8 +18,10 @@ const Landing = () => {
     <>
       {showPopup && (
         <div className="popup">
-          <div className="body">
-            <div className="typing">Hello, friend!</div>
+          <div class="landing-body">
+            <div class="typewriter">
+              <h1>Hello, friend!</h1>
+            </div>
           </div>
         </div>
       )}
