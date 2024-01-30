@@ -34,7 +34,7 @@ const Landing = () => {
     };
 
     const startTimeout = () => {
-      const newTimeoutId = setTimeout(handleTimeout, 10000);
+      const newTimeoutId = setTimeout(handleTimeout, 500000);
       setTimeoutId(newTimeoutId);
     };
 
