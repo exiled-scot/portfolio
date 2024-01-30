@@ -1,0 +1,65 @@
+/* About Section  */
+.about {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+/* Styles for portrait mode */
+@media (orientation: portrait) {
+
+  /* Add your CSS styles for portrait mode here */
+  .about {
+    min-height: 50vh;
+  }
+}
+
+.about-heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  letter-spacing: .3rem;
+}
+
+.at-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0 5rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 600px) {
+  .at-text {
+    text-align: justify;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .pc-monitor {
+    display: none;
+  }
+}
+
+.at-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pc-monitor {
+  flex: 1;
+}
+
+/* End About Section  */
+
+

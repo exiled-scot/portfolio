@@ -1,4 +1,5 @@
 import PCMonitor from './PCMonitor';
+import './About.css';
 
 const About = () => {
     return (
