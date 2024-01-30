@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import Modal from 'react-modal';
+import './Landing.css';
 
 const Landing = () => {
   const [showPopup, setShowPopup] = useState(true);
 
   useEffect(() => {
-    // This useEffect hook runs once, on initial component load
-
-    // Add a small timeout to show the popup for a few seconds before hiding it
     const timeout = setTimeout(() => {
       setShowPopup(false);
-    }, 3000);
+    }, 10000); // 10 seconds
 
-    // Clean up the timeout when the component unmounts
     return () => {
       clearTimeout(timeout);
     };
-  }, []); // Empty dependency array ensures this effect only runs once
+  }, []);
 
   return (
-    <Modal isOpen={showPopup}>
-      <div>Hello, friend!</div>
-    </Modal>
+    <>
+      {showPopup && (
+        <div className="popup">
+          <div className="body">
+            <div className="typing">Hello, friend!</div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
