@@ -15,8 +15,11 @@ const Travel = () => {
             <div class="travel-img-container inverted">
                 <img src={sailing3} className='travel-img'/>
             </div>
-            <div class="travel-img-container inverted">
+            <div class="travel-img-container">
                 <img src={sailing4} className='travel-img'/>
+            </div>
+            <div class="travel-img-container">
+                <img src={sailing5} className='travel-img'/>
             </div>
             <div class="travel-img-container">
                 <img src={sailing5} className='travel-img'/>

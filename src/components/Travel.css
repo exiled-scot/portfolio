@@ -25,3 +25,26 @@
 .travel-img-container.inverted {
     transform: rotate(-3deg);
 }
+
+.travel-img-container {
+    border: solid #FFF 10px;
+    margin: auto;
+    width: 376px;
+    height: 251px;
+    overflow: hidden;
+    transform: rotate(3deg);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    position: relative;
+    top: 50px; /* Add a top position to create staggered effect */
+    left: -20px; /* Add a left position to create staggered effect */
+}
+
+.travel-img-container:nth-child(even) {
+    top: 0; /* Reset top position for even elements */
+}
+
+.travel-img-container.inverted {
+    transform: rotate(-3deg);
+    top: -50px; /* Adjust top position for inverted elements */
+    left: 20px; /* Adjust left position for inverted elements */
+}
