@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Aboretto';
+  font-weight: normal;
+  src: url('./fonts/Aboreto-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Aboretto', Arial, sans-serif;
+  font-weight: normal; /* Or 'bold' for bold style */
+}
+
 body {
   margin: 0;
   padding: 0;

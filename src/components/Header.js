@@ -34,21 +34,21 @@ class Header extends React.Component {
       <div className="header">
         <div className="header-logo">
           <a href="#app">
-            <h3 className="header-name">Scott Stevenson</h3>
+            <h3 className="header-name">SCOTT STEVENSON</h3>
           </a>
         </div>
         <div className="header-container">
           <div className="nav-item">
-            <a href="#about">About</a>
+            <a href="#about">ABOUT</a>
           </div>
           <div className="nav-item">
-            <a href="#projects">Projects</a>
+            <a href="#projects">PROJECTS</a>
           </div>
           <div className="nav-item">
-            <a href="#skills">Skills</a>
+            <a href="#skills">SKILLS</a>
           </div>
           <div className="nav-item">
-            <a href="#footer">Contact</a>
+            <a href="#footer">CONTACT</a>
           </div>
         </div>
         <div className="progress-bar" style={{ width: `${scrollPercentage}%` }}></div>
