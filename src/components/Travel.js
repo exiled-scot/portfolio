@@ -22,18 +22,25 @@ const Travel = () => {
 
     return (
         <>
+            <div>
+                <h1 className='travel-title'>There is more to life than pixels on the screen...</h1>
+            </div>
             <div className='travel-container'>
-                <div className="travel-img-container">
-                    <img src={sailing2} className='travel-img' alt="Sailing 2" />
+                <div className="left-container">
+                    <div className="travel-img-container">
+                        <img src={sailing2} className='travel-img' alt="Sailing 2" />
+                    </div>
+                    <div className="travel-img-container">
+                        <video ref={sailingvidVideoRef} src={sailingvid1} className='travel-vid' loop muted onMouseEnter={() => handleMouseEnter(sailingvidVideoRef)} onMouseLeave={() => handleMouseLeave(sailingvidVideoRef)} />
+                    </div>
                 </div>
-                <div className="travel-img-container">
-                    <video ref={sailingvidVideoRef} src={sailingvid1} className='travel-vid' loop muted onMouseEnter={() => handleMouseEnter(sailingvidVideoRef)} onMouseLeave={() => handleMouseLeave(sailingvidVideoRef)} />
-                </div>
-                <div className="travel-img-container inverted">
-                    <img src={sailing3} className='travel-img' alt="Sailing 3" />
-                </div>
-                <div className="travel-img-container">
-                    <img src={sailing4} className='travel-img' alt="Sailing 4" />
+                <div className="right-container">
+                    <div className="travel-img-container inverted">
+                        <img src={sailing3} className='travel-img' alt="Sailing 3" />
+                    </div>
+                    <div className="travel-img-container">
+                        <img src={sailing4} className='travel-img' alt="Sailing 4" />
+                    </div>
                 </div>
                 <div className="travel-img-container">
                     <img src={camping1} className='travel-img' alt="Camping 1" />
