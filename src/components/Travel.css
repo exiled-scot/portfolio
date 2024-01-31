@@ -66,3 +66,13 @@
     transition: transform 6s;
     filter: none;
 }
+
+#sailingvid1::-webkit-media-controls-enclosure,
+#dolphin1::-webkit-media-controls-enclosure,
+#sailingvid1::media-controls-enclosure,
+#dolphin1::media-controls-enclosure {
+  display: none !important;
+}
+
+
+
