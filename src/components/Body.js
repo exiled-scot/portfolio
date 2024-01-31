@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Avatar from '../assets/Avatar.png';
 import { FaGrav } from "react-icons/fa";
-
+import './Body.css';
 
 const Body = () => {
     // Starting point: https://codepen.io/FacepalmRobot/pen/dGBKJB    
