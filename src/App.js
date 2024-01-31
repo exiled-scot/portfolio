@@ -6,39 +6,53 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
-import sailing from './assets/sailing1.png';
 import './App.css';
 
-const App = () => {
+class App extends React.Component {
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-  const imageOpacity = 0;
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
-  return (
-    <div id="app" className="App">
-      <div className="fade-overlay" />
-      <img src={sailing} alt="Background" style={{ opacity: `${imageOpacity}%` }} className="background-image" />
-      <div style={{ position: 'relative', zIndex: 0 }}>
-        <Header />
-        <article className="scroller">
-          <section>
-            <Body />
-          </section>
-          <section>
-            <About />
-          </section>
-          <section>
-            <Projects />
-          </section>
-          <section>
-            <Skills />
-          </section>
-          <section>
-            <Footer />
-          </section>
-        </article>
-      </div>
-    </div>
-  );
+  handleScroll = () => {
+    const header = document.querySelector('.header-bg');
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollHeight = documentHeight - windowHeight;
+    const opacity = window.scrollY / scrollHeight;
+    header.style.opacity = opacity > 1 ? 1 : opacity;
+  };
+
+  render() {
+    return (
+      <>
+        <div className="header-bg" />
+        <div style={{ position: 'relative', zIndex: 0 }}>
+          <Header />
+          <article>
+            <section>
+              <Body />
+            </section>
+            <section>
+              <About />
+            </section>
+            <section>
+              <Projects />
+            </section>
+            <section>
+              <Skills />
+            </section>
+            <section>
+              <Footer />
+            </section>
+          </article>
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
