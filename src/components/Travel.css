@@ -7,7 +7,6 @@
     letter-spacing: 0.3rem;
     padding-bottom: 4rem;
 }
-
 .travel-img-container {
     border: solid #FFF 10px;
     margin: auto;
@@ -45,23 +44,18 @@
     transform: rotate(3deg);
     box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     position: relative;
-    top: 50px;
-    /* Add a top position to create staggered effect */
-    left: -20px;
-    /* Add a left position to create staggered effect */
+    top: 50px; /* Add a top position to create staggered effect */
+    left: -20px; /* Add a left position to create staggered effect */
 }
 
 .travel-img-container:nth-child(even) {
-    top: 0;
-    /* Reset top position for even elements */
+    top: 0; /* Reset top position for even elements */
 }
 
 .travel-img-container.inverted {
     transform: rotate(-3deg);
-    top: -50px;
-    /* Adjust top position for inverted elements */
-    left: 20px;
-    /* Adjust left position for inverted elements */
+    top: -50px; /* Adjust top position for inverted elements */
+    left: 20px; /* Adjust left position for inverted elements */
 }
 
 .travel-container {
@@ -80,50 +74,4 @@
     transform: scale(1.2, 1.2);
     transition: transform 6s;
     filter: none;
-}
-
-#sailingvid1::-webkit-media-controls-enclosure,
-#dolphin1::-webkit-media-controls-enclosure,
-#sailingvid1::media-controls-enclosure,
-#dolphin1::media-controls-enclosure {
-    display: none !important;
-}
-
-.travel-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.right-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.travel-img-container {
-    border: solid #FFF 10px;
-    margin: auto;
-    width: 376px;
-    height: 251px;
-    overflow: hidden;
-    transform: rotate(3deg);
-    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.travel-img-container:nth-child(even) {
-    top: 0;
-}
-
-.travel-img-container.inverted {
-    transform: rotate(-3deg);
-    top: 0;
-    left: 0;
 }
