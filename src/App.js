@@ -5,6 +5,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
+import Travel from './components/Travel';
 import Landing from './components/Landing';
 import './App.css';
 
@@ -68,6 +69,9 @@ class App extends React.Component {
             </section>
             <section>
               <Skills />
+            </section>
+            <section>
+            <Travel />
             </section>
             <section>
               <Footer />
