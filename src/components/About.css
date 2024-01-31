@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .about-heading {
@@ -26,12 +28,20 @@
   text-align: justify;
   margin-bottom: 1rem;
   font-size: 3rem;
-  padding-left: 20%;
-  padding-right: 20%;
+  width: 100%;
 }
 
 .about-image {
+  border: 6px solid black;
+  border-radius: 20px;
   margin-top: 2rem;
-  max-width: 60%;
+  width: 100%; /* Set the width of the image to 100% */
+  max-width: 100%; /* Set the maximum width of the image to 100% */
+}
 
+/* Media query for laptop/desktop width */
+@media (min-width: 1024px) {
+  .content-container {
+    max-width: 40%; /* Reduce the width of the content container */
+  }
 }
