@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #343434;
 }
 
 a,
@@ -20,4 +19,39 @@ a:hover {
 .scroller section {
   scroll-snap-align: start;
 }
+
+.App {
+  text-align: center;
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  filter: grayscale(100%);
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #343434;
+}
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
+
 

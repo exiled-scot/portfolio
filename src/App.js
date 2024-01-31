@@ -6,14 +6,14 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
+import sailing from './assets/sailing1.png';
 import './App.css';
 
 const App = () => {
   return (
     <div id="app" className="App">
-      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', zIndex: 10 }}>
-        <Landing />
-      </div>
+      <div className="fade-overlay" />
+      <img src={sailing} alt="Background" className="background-image" />
       <div style={{ position: 'relative', zIndex: 0 }}>
         <Header />
         <article className="scroller">
@@ -39,4 +39,3 @@ const App = () => {
 }
 
 export default App;
-
