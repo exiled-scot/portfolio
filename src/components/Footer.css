@@ -2,7 +2,6 @@
 .footer {
   min-height: 20vh;
   width: 100%;
-  background-color: black;
   color: white;
   flex-direction: column;
   text-align: center;

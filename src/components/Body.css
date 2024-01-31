@@ -1,7 +1,6 @@
 /* Body Section */
 .body {
   position: relative;
-  background-color: #343434;
   display: flex;
   justify-content: center;
   width: 100%;
