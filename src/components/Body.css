@@ -159,12 +159,12 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3rem;
+  padding-top: 0.3rem;
   background: red;
   box-shadow: 0 0 30px red;
   text-shadow: 0 0 20px white;
   color: white;
-  width: 5rem;
-  height: 3rem;
+  height: 4rem;
   text-align: center;
   min-width: 200px;
   animation-name: blink;
