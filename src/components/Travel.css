@@ -52,3 +52,17 @@
 .travel-container {
     padding-bottom: 20rem;
 }
+
+.travel-img-container .travel-vid {
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.travel-img-container:hover .travel-vid {
+    transform: scale(1.2, 1.2);
+    transition: transform 6s;
+    filter: none;
+}
