@@ -10,10 +10,13 @@ import sailing from './assets/sailing1.png';
 import './App.css';
 
 const App = () => {
+
+  const imageOpacity = 0;
+
   return (
     <div id="app" className="App">
       <div className="fade-overlay" />
-      <img src={sailing} alt="Background" className="background-image" />
+      <img src={sailing} alt="Background" style={{ opacity: `${imageOpacity}%` }} className="background-image" />
       <div style={{ position: 'relative', zIndex: 0 }}>
         <Header />
         <article className="scroller">
