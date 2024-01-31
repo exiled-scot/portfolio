@@ -16,39 +16,59 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    // Calculate the height of the About section
+    const aboutSection = document.querySelector('.about-section');
+    const aboutSectionHeight = aboutSection ? aboutSection.offsetHeight : 0;
+
+    // Calculate the adjusted height of the page
+    const adjustedHeight = document.documentElement.scrollHeight - aboutSectionHeight;
+
+    // Store the adjusted height in the component's state
+    this.setState({ adjustedHeight });
+
+    // Add event listener for scroll event
     window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
+    // Remove the event listener when the component is unmounted
     window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
-    const header = document.querySelector('.header-bg');
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    const scrollHeight = documentHeight - windowHeight;
-    let opacity = window.scrollY / scrollHeight;
+    // Get the adjusted height from the component's state
+    const { adjustedHeight } = this.state;
+
+    // Calculate the position of the About section
+    const aboutSection = document.querySelector('.about-section');
+    const aboutSectionTop = aboutSection ? aboutSection.offsetTop : 0;
+
+    // Calculate the scroll position relative to the adjusted height
+    const scrollPosition = window.pageYOffset - aboutSectionTop;
+
+    // Calculate the maximum scroll position (adjusted for the adjusted height)
+    const maxScrollPosition = adjustedHeight - window.innerHeight;
+
+    // Calculate the opacity based on the scroll position
+    let opacity = scrollPosition / maxScrollPosition;
+
+    // Calculate the grayscale value based on the scroll position
     let grayscale = 100;
 
-    // Decrement grayscale value after scrolling past 60% of the screen
-    if (opacity > 0.6) {
+    // Gradually decrease the grayscale value beyond the About section
+    if (opacity > 1) {
+      grayscale = 0;
+    } else if (opacity > 0.6) {
       grayscale = 100 - (opacity - 0.6) / 0.4 * 100;
     }
 
-    header.style.filter = `grayscale(${grayscale}%)`;
-
     // Ensure opacity doesn't exceed 1
     opacity = opacity > 1 ? 1 : opacity;
+
+    // Apply the opacity and grayscale to the header element
+    const header = document.querySelector('.header-bg');
     header.style.opacity = opacity;
-  }
-
-  componentDidMount() {
-    // Call handleScroll once after the component has mounted
-    this.handleScroll();
-
-    // Add event listener for scroll event
-    window.addEventListener('scroll', this.handleScroll);
+    header.style.filter = `grayscale(${grayscale}%)`;
   }
 
   render() {
@@ -61,7 +81,7 @@ class App extends React.Component {
             <section>
               <Body />
             </section>
-            <section>
+            <section className="about-section">
               <About />
             </section>
             <section>
