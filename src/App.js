@@ -9,6 +9,11 @@ import Landing from './components/Landing';
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -17,14 +22,33 @@ class App extends React.Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll = () => {
+  handleScroll() {
     const header = document.querySelector('.header-bg');
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
     const scrollHeight = documentHeight - windowHeight;
-    const opacity = window.scrollY / scrollHeight;
-    header.style.opacity = opacity > 1 ? 1 : opacity;
-  };
+    let opacity = window.scrollY / scrollHeight;
+    let grayscale = 100;
+
+    // Decrement grayscale value after scrolling past 60% of the screen
+    if (opacity > 0.6) {
+      grayscale = 100 - (opacity - 0.6) / 0.4 * 100;
+    }
+
+    header.style.filter = `grayscale(${grayscale}%)`;
+
+    // Ensure opacity doesn't exceed 1
+    opacity = opacity > 1 ? 1 : opacity;
+    header.style.opacity = opacity;
+  }
+
+  componentDidMount() {
+    // Call handleScroll once after the component has mounted
+    this.handleScroll();
+
+    // Add event listener for scroll event
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
   render() {
     return (
