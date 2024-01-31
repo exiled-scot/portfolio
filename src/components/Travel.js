@@ -9,22 +9,23 @@ import sailing5 from '../assets/sailing5.png';
 const Travel = () => {
     return (
         <>
-            <div class="travel-img-container">
-                <img src={sailing2} className='travel-img'/>
+            <div className='travel-container'>
+                <div class="travel-img-container">
+                    <img src={sailing2} className='travel-img' />
+                </div>
+                <div class="travel-img-container inverted">
+                    <img src={sailing3} className='travel-img' />
+                </div>
+                <div class="travel-img-container">
+                    <img src={sailing4} className='travel-img' />
+                </div>
+                <div class="travel-img-container">
+                    <img src={sailing5} className='travel-img' />
+                </div>
+                <div class="travel-img-container">
+                    <img src={sailing5} className='travel-img' />
+                </div>
             </div>
-            <div class="travel-img-container inverted">
-                <img src={sailing3} className='travel-img'/>
-            </div>
-            <div class="travel-img-container">
-                <img src={sailing4} className='travel-img'/>
-            </div>
-            <div class="travel-img-container">
-                <img src={sailing5} className='travel-img'/>
-            </div>
-            <div class="travel-img-container">
-                <img src={sailing5} className='travel-img'/>
-            </div>
-
         </>
     );
 }

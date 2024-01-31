@@ -48,3 +48,7 @@
     top: -50px; /* Adjust top position for inverted elements */
     left: 20px; /* Adjust left position for inverted elements */
 }
+
+.travel-container {
+    padding-bottom: 20rem;
+}
