@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Avatar from '../assets/Avatar.png';
 import { FaGrav } from "react-icons/fa";
+import Landing from './Landing';
 import './Body.css';
 
 const Body = () => {
@@ -9,7 +10,8 @@ const Body = () => {
         <div id="body" className="body">
             <div className="body-container">
                 <div className="body-profile">
-                    <img className="body-img" alt="avatar" src={Avatar} />
+                    <Landing/>
+                    <img className="body-img" style={{display:"none"}} alt="avatar" src={Avatar} />
 
                     <div className="body-content">
                         <div className="body-headline">Scott Stevenson</div>
