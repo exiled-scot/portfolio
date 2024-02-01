@@ -48,19 +48,19 @@ const Travel = () => {
                     <div className='travel-right-column'>
                         <div className='travel-right-column-text'>
                             <div className='top-text'>
-                                <p>This is the top text.</p>
+                                <p>Taking every day</p>
                             </div>
                             <div className='top-middle-text'>
-                                <p>This is the top middle text.</p>
+                                <p>Building beautiful things</p>
                             </div>
                             <div className='middle-text'>
-                                <p>This is the middle text.</p>
+                                <p>Solving real problems</p>
                             </div>
                             <div className='bottom-middle-text'>
-                                <p>This is the bottom middle text.</p>
+                                <p>Ruled by the sea</p>
                             </div>
                             <div className='bottom-text'>
-                                <p>This is the bottom text.</p>
+                                <p>Remote-first opportunities</p>
                             </div>
                         </div>
                     </div>
