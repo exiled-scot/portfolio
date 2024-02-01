@@ -60,6 +60,7 @@
 }
 
 .travel-container {
+    overflow: hidden;
     padding-bottom: 20rem;
 }
 
