@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Avatar from '../assets/Avatar.png';
 import { FaGrav } from "react-icons/fa";
@@ -10,7 +9,6 @@ const Body = () => {
         <div id="body" className="body">
             <div className="body-container">
                 <div className="body-profile">
-                    <Landing/>
                     <img className="body-img" style={{display:"none"}} alt="avatar" src={Avatar} />
 
                     <div className="body-content">
