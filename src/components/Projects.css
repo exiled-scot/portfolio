@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.projects-container {
+  overflow-y:hidden;
+}
+
 .title-heading {
   color: white;
   font-size: 4rem;
