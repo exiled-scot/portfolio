@@ -40,41 +40,44 @@
   border: 6px solid black;
   border-radius: 20px;
   margin-top: 2rem;
-  width: 100%; /* Set the width of the image to 100% */
-  max-width: 100%; /* Set the maximum width of the image to 100% */
+  width: 100%;
+  /* Set the width of the image to 100% */
+  max-width: 100%;
+  /* Set the maximum width of the image to 100% */
 }
 
-/* Media query for laptop/desktop width */
-@media (min-width: 1800px) {
+@media (min-width: 1400px) {
+
   .content-container {
-    max-width: 70%; /* Reduce the width of the content container */
-    flex-direction: row; /* Display the text and image side-by-side */
-    justify-content: space-between; /* Add spacing between text and image */
+    max-width: 70%;
+    /* Reduce the width of the content container */
+    flex-direction: row;
+    /* Display the text and image side-by-side */
+    justify-content: space-between;
+    /* Add spacing between text and image */
+  }
+
+
+  .text-container {
+    padding-left: 10rem;
+  }
+
+  /* Modified code for the second row */
+  .content-container:nth-child(3) {
+    flex-direction: row-reverse;
   }
 
   .text-container {
-    width: 60%; /* Set the width of the text container */
-    padding-right: 10rem;
+    width: 60%;
+    /* Set the width of the text container */
+    padding-right: 8rem;
   }
 
   .about-image {
-    width: 40%; /* Set the width of the image container */
-    max-width: none; /* Remove the maximum width restriction */
+    width: 40%;
+    /* Set the width of the image container */
+    max-width: none;
+    /* Remove the maximum width restriction */
   }
-}
 
-@media (max-width: 700px) {
-  .about-text {
-    text-align: left;
-    font-size: 2rem;
-  }
-}
-
-/* Modified code for the second row */
-.content-container:nth-child(3) {
-  flex-direction: row-reverse;
-}
-
-.text-container {
-  padding-left: 10rem;
 }

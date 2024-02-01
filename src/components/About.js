@@ -14,7 +14,7 @@ const About = () => {
             <p>I am a full stack software developer from Scotland.</p>
           </div>
         </div>
-        <img src={Kali} alt="Kali Linux" className="about-image" />
+        <img src={screenshot} alt="Screenshot" className="about-image" />
       </div>
 
       <div className="content-container">
@@ -23,7 +23,7 @@ const About = () => {
             <p>I have worked as a security tester and software developer for a boutique security company near Edinburgh.</p>
           </div>
         </div>
-        <img src={screenshot} alt="Screenshot" className="about-image" />
+        <img src={Kali} alt="Kali Linux" className="about-image" />
       </div>
 
       <div className="content-container">
