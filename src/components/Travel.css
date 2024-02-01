@@ -6,6 +6,7 @@
     margin-top: 5%;
     letter-spacing: 0.3rem;
     padding-bottom: 4rem;
+    overflow: hidden;
 }
 .travel-img-container {
     border: solid #FFF 10px;

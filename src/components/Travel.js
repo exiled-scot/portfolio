@@ -22,10 +22,11 @@ const Travel = () => {
 
     return (
         <>
-            <div>
-                <h1 className='travel-title'>There is more to life than pixels on the screen...</h1>
-            </div>
             <div className='travel-container'>
+
+                <div>
+                    <h1 className='travel-title'>There is more to life than pixels on the screen...</h1>
+                </div>
                 <div className="left-container">
                     <div className="travel-img-container">
                         <img src={sailing2} className='travel-img' alt="Sailing 2" />
