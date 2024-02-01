@@ -98,4 +98,35 @@
   background-color: white;
   width: 0;
   transition: width 0.3s ease-in-out;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 6rem;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-container {
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+  }
+  
+  .progress-bar {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    height: 4px;
+    background-color: white;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+    bottom: 0;
+  }
 }
