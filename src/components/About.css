@@ -60,3 +60,10 @@
     max-width: none; /* Remove the maximum width restriction */
   }
 }
+
+@media (max-width: 700px) {
+  .about-text {
+    text-align: left;
+    font-size: 2rem;
+  }
+}
