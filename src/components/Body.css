@@ -109,7 +109,9 @@
 
 @media (max-width: 600px) {
   .body-img {
-    height: auto;
+    height: 100%;
+    max-width: auto;
+    transform: scale(1.5);
   }
 }
 
