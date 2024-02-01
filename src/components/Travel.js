@@ -46,8 +46,23 @@ const Travel = () => {
                         </div>
                     </div>
                     <div className='travel-right-column'>
-                        {/* on scroll reveal text */}
-                        
+                        <div className='travel-right-column-text'>
+                            <div className='top-text'>
+                                <p>This is the top text.</p>
+                            </div>
+                            <div className='top-middle-text'>
+                                <p>This is the top middle text.</p>
+                            </div>
+                            <div className='middle-text'>
+                                <p>This is the middle text.</p>
+                            </div>
+                            <div className='bottom-middle-text'>
+                                <p>This is the bottom middle text.</p>
+                            </div>
+                            <div className='bottom-text'>
+                                <p>This is the bottom text.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
