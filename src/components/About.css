@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 8rem;
 }
 
 .content-container {
@@ -15,14 +16,15 @@
   align-items: center;
   max-width: 60%;
   margin: 0 auto;
+  padding-bottom: 8rem;
 }
 
 .about-heading {
   color: white;
-  font-size: 5rem;
+  font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 
 .about-text {
@@ -66,4 +68,13 @@
     text-align: left;
     font-size: 2rem;
   }
+}
+
+/* Modified code for the second row */
+.content-container:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.text-container {
+  padding-left: 10rem;
 }
