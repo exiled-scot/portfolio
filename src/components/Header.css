@@ -93,3 +93,27 @@
   width: 0;
   transition: width 0.3s ease-in-out;
 }
+
+@media (max-width: 600px) {
+  .header {
+    height: 6rem;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-name {
+    font-size: 1rem;
+  }
+
+  .header-container {
+    padding: 2rem;
+    align-items: right;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
+

@@ -6,7 +6,7 @@
 
 .heading {
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   padding: 4rem;
   letter-spacing: .3rem;
@@ -20,7 +20,6 @@
 .projects-container .project {
   position: relative;
   height: 38vh;
-  border: 0.3rem solid black;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -59,7 +58,7 @@
 .name {
   color: white;
   margin: 10px 0;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: -0.5rem;
 }
 
