@@ -6,7 +6,16 @@
 
 * {
   font-family: 'Aboretto', Arial, sans-serif;
-  font-weight: normal; /* Or 'bold' for bold style */
+  font-weight: normal;
+  /* Or 'bold' for bold style */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* Adding an outline */
+  -webkit-text-stroke: 2px white;
+  -moz-text-stroke: 2px black;
+  -ms-text-stroke: 2px black;
+  -o-text-stroke: 2px black;
+  text-stroke: 2px black;
 }
 
 
@@ -30,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0%;  
+  opacity: 0%;
 }
 
 .header-bg h2 {
@@ -43,7 +52,7 @@ body {
   text-align: center;
   max-width: 80%;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-  
+
 }
 
 a,
