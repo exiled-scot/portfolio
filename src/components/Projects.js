@@ -13,52 +13,50 @@ const Projects = () => {
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
-        {
-          breakpoint: 600,
-          settings: {
-            infinite: false,
-            initialSlide: 0,
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+            {
+                breakpoint: 600,
+                settings: {
+                    infinite: false,
+                    initialSlide: 0,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
     return (
         <div id='projects' className='projects'>
-            <div className="heading">
+            <div className="title-heading">
                 <h2>PROJECTS</h2>
             </div>
-                <div className="projects-container">
-                    <Slider {...settings}>
+            <div className="projects-container">
+                <Slider {...settings}>
                     {
                         data.map((project, key) => {
                             return (
                                 <div key={key} className="project">
-                                    <div className="content">
-                                        <img src={Project} alt="Project" />
-                                        <h2 className="name">{project.name}</h2>
-                                        {
-                                            project.description.length > 130
-                                            ? <p className='description-min'>{project.description}</p>
-                                            :  <p className='description'>{project.description}</p>
-                                        }
-                                        <div>
-                                            <a
-                                            className="project-button"
-                                            target="_blank"
-                                            href={project.link}
-                                            rel="noreferrer"
-                                            >GitHub
-                                            </a>
+                                    <a
+                                        className="project-button"
+                                        target="_blank"
+                                        href={project.link}
+                                        rel="noreferrer"
+                                    >
+                                        <div className="content">
+                                            <img src={Project} alt="Project" />
+                                            <h2 className="name">{project.name}</h2>
+                                            {
+                                                project.description.length > 130
+                                                    ? <p className='description-min'>{project.description}</p>
+                                                    : <p className='description'>{project.description}</p>
+                                            }
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             )
                         })
                     }
-                    </Slider>
-                </div>
+                </Slider>
+            </div>
         </div>
     )
 }
