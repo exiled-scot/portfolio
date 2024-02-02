@@ -8,8 +8,15 @@ class Header extends React.Component {
     super(props);
     this.state = {
       scrollPercentage: 0,
+      isHovered: false,
     };
   }
+
+  handleHover = () => {
+    this.setState((prevState) => ({
+      isHovered: !prevState.isHovered,
+    }));
+  };
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -32,8 +39,10 @@ class Header extends React.Component {
 
     return (
       <div className="header">
-        <div className="header-logo">
-          <h3 className="header-name">SCOTT STEVENSON</h3>
+        <div className="header-logo" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
+          <h3 className="header-name">
+            {this.state.isHovered ? "RESUMÉ" : "SCOTT STEVENSON"}
+          </h3>
         </div>
         <div className="header-container">
           <div className="nav-item">
