@@ -34,7 +34,7 @@ const Projects = () => {
       <div className='projects-container'>
         <Slider {...settings}>
           {data.map((project, key) => (
-            <div className='example-2 card' key={key}>
+            <div className='example-2 card project' key={key}>
               <div
                 className='wrapper'
                 style={{

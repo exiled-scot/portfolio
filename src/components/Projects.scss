@@ -1,7 +1,6 @@
 /* Projects section */
 .projects {
   height: auto;
-  text-align: center;
 }
 
 .projects-container {
@@ -14,6 +13,7 @@
   text-transform: uppercase;
   padding: 4rem;
   letter-spacing: .3rem;
+  text-align: center;
 }
 
 .project-container {
@@ -29,14 +29,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .projects-container .project .content {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 85%;
   border-radius: 15px;
   transition: all 0.5s;
@@ -98,42 +96,10 @@ sans-serif;
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-image: linear-gradient(to bottom right, $dark-blue, $light-blue);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  font-family: $open-sans;
-}
-
-.container {
-  margin: auto;
-  width: 100%;
-  padding: 3rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: $open-sans;
-  font-weight: 300;
-}
-
-.row {
-  margin: auto 0;
-}
-
 // Base styles
 .card {
   float: left;
   padding: 1rem;
-  min-width: 500px;
   .menu-content {
     @include cf;
     margin: 0;
@@ -174,11 +140,13 @@ h1 {
     font-size: 12px;
   }
   .title {
+    text-align: left;
     margin-top: 10px;
   }
   .text {
     height: 70px;
     margin: 0;
+    font-size: 2.5rem;
   }
   input[type='checkbox'] {
     display: none;

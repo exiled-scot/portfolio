@@ -48,6 +48,7 @@ class Header extends React.Component {
           className={`header-logo ${isHovered ? 'hovered' : ''}`}
           onMouseEnter={this.handleHover}
           onMouseLeave={this.handleHover}
+          style={{color:'white'}}
         >
           <button
             className={`header-name ${isHovered ? 'fade-in' : ''}`}

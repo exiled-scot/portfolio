@@ -1,24 +1,3 @@
-@font-face {
-  font-family: 'Aboretto';
-  font-weight: normal;
-  src: url('./fonts/Aboreto-Regular.ttf') format('truetype');
-}
-
-* {
-  font-family: 'Aboretto', Arial, sans-serif;
-  font-weight: normal;
-  /* Or 'bold' for bold style */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-  /* Adding an outline */
-  -webkit-text-stroke: 2px white;
-  -moz-text-stroke: 2px black;
-  -ms-text-stroke: 2px black;
-  -o-text-stroke: 2px black;
-  text-stroke: 2px black;
-}
-
-
 body {
   margin: 0;
   padding: 0;
