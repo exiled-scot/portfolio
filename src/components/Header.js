@@ -33,9 +33,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="header-logo">
-          <a href="#app">
-            <h3 className="header-name">SCOTT STEVENSON</h3>
-          </a>
+          <h3 className="header-name">SCOTT STEVENSON</h3>
         </div>
         <div className="header-container">
           <div className="nav-item">

@@ -10,15 +10,16 @@
 
 .header-logo {
   padding: 0.1rem 56px;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: flex-start;
+  z-index: 3; /* Adjust the z-index to be above the progress bar */
+  border: 6px solid #edf2f4;
+  padding: 0.7em;
 }
 
 .header-name {
   color: #edf2f4;
-  border: 6px solid #edf2f4;
-  padding: 0.7em;
   font-size: 2rem;
   animation: show 0.5s;
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
