@@ -4,7 +4,7 @@
         "description" : "An elearning website built with React and Pocketbase",
         "technologies" : ["React", "Pocketbase"],
         "link" : "https://github.com/exiled-scot/elearning-website",
-        "image" : "http://localhost:3000/static/media/laptop.e034910db6ae582e32a6.jpeg"
+        "image" : "https://github.com/exiled-scot/elearning-website/blob/master/screenshots/screenshot2.png?raw=true"
     },
     {
         "name" : "eCommerce Storepage",
