@@ -1,5 +1,3 @@
-// Header.js
-
 import React from 'react';
 import './Header.css';
 
@@ -16,6 +14,13 @@ class Header extends React.Component {
     this.setState((prevState) => ({
       isHovered: !prevState.isHovered,
     }));
+  };
+
+  handleDownload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '../assets/ScottStevenson-cv.pdf';
+    downloadLink.download = 'ScottStevenson-cv.pdf';
+    downloadLink.click();
   };
 
   componentDidMount() {
@@ -35,14 +40,21 @@ class Header extends React.Component {
   };
 
   render() {
-    const { scrollPercentage } = this.state;
+    const { scrollPercentage, isHovered } = this.state;
 
     return (
       <div className="header">
-        <div className="header-logo" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
-          <h3 className="header-name">
-            {this.state.isHovered ? "RESUMÉ" : "SCOTT STEVENSON"}
-          </h3>
+        <div
+          className={`header-logo ${isHovered ? 'hovered' : ''}`}
+          onMouseEnter={this.handleHover}
+          onMouseLeave={this.handleHover}
+        >
+          <button
+            className={`header-name ${isHovered ? 'fade-in' : ''}`}
+            onClick={this.handleDownload}
+          >
+            {isHovered ? 'RESUMÉ' : 'SCOTT STEVENSON'}
+          </button>
         </div>
         <div className="header-container">
           <div className="nav-item">
