@@ -1,0 +1,136 @@
+.travel-title {
+    font-size: 5rem;
+    color: white;
+    margin: 3rem 0;
+    text-align: center;
+    margin-top: 5%;
+    letter-spacing: 0.3rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+
+.travel-img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.travel-img-container:hover img {
+    transform: scale(1.2, 1.2);
+    transition: transform 6s;
+    filter: none;
+}
+
+.travel-img-container.inverted {
+    transform: rotate(-3deg);
+}
+
+.travel-img-container {
+    border: solid #FFF 10px;
+    margin: auto;
+    width: 376px;
+    height: 251px;
+    overflow: hidden;
+    transform: rotate(3deg);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    position: relative;
+    top: 50px;
+    /* Add a top position to create staggered effect */
+    left: -20px;
+    /* Add a left position to create staggered effect */
+}
+
+.travel-img-container.inverted {
+    transform: rotate(-3deg);
+    top: -50px;
+    /* Adjust top position for inverted elements */
+    left: 20px;
+    /* Adjust left position for inverted elements */
+}
+
+.travel-container {
+    overflow: hidden;
+    padding-bottom: 20rem;
+}
+
+.travel-img-container .travel-vid {
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.travel-img-container:hover .travel-vid {
+    transform: scale(1.2, 1.2);
+    transition: transform 6s;
+    filter: none;
+}
+
+.travel-img-columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.travel-left-column {
+    margin-left: 0;
+    flex: 1;
+}
+
+.travel-right-column {
+    flex: 1;
+    height: 100vh;
+}
+
+.travel-right-column {
+    flex: 1;
+    position: relative;
+    font-size: 5rem;
+    color: white;
+}
+
+@media (min-width: 1400px) {
+    .top-text {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-middle-text {
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .middle-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom-middle-text {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        text-align: center;
+    }
+
+
+    .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        transform: translateX(-50%);
+        width: 50%;
+        text-align: center;
+    }
+}
