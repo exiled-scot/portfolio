@@ -2,16 +2,19 @@
     {
         "name" : "eLearning Website",
         "description" : "An elearning website built with React and Pocketbase",
-        "link" : "https://github.com/exiled-scot/elearning-website"
+        "link" : "https://github.com/exiled-scot/elearning-website",
+        "image" : "http://localhost:3000/static/media/laptop.e034910db6ae582e32a6.jpeg"
     },
     {
         "name" : "eCommerce Storepage",
         "description" : "An interactive ecommerce page built with React.",
-        "link" : "https://github.com/exiled-scot/React-eCommerce-Storepage"
+        "link" : "https://github.com/exiled-scot/React-eCommerce-Storepage",
+        "image" : "http://localhost:3000/static/media/laptop.e034910db6ae582e32a6.jpeg"
     },
    {
         "name" : "Interactive eLibrary",
         "description" : "Built using Next.js and styled with Tailwind. Search for books. ",
-        "link" : "https://github.com/exiled-scot/Interactive-E-Library-Using-Next.js-and-Tailwind"
+        "link" : "https://github.com/exiled-scot/Interactive-E-Library-Using-Next.js-and-Tailwind",
+        "image" : "http://localhost:3000/static/media/laptop.e034910db6ae582e32a6.jpeg"
     }
 ]

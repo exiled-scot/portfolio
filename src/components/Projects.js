@@ -34,6 +34,8 @@ const Projects = () => {
                     {
                         data.map((project, key) => {
                             return (
+
+                                
                                 <div key={key} className="project">
                                     <a
                                         className="project-button"
@@ -42,8 +44,7 @@ const Projects = () => {
                                         rel="noreferrer"
                                     >
                                         <div className="content">
-                                            <img src={Project} alt="Project" />
-                                            <h2 className="name">{project.name}</h2>
+                                        <img src={project.image} alt={project.name} />                                           <h2 className="name">{project.name}</h2>
                                             {
                                                 project.description.length > 130
                                                     ? <p className='description-min'>{project.description}</p>
