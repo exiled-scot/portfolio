@@ -7,11 +7,11 @@
         "image" : "https://github.com/exiled-scot/elearning-website/blob/master/screenshots/screenshot2.png?raw=true"
     },
     {
-        "name" : "eCommerce Storepage",
-        "description" : "An interactive ecommerce page built with React.",
-        "technologies" : ["React"],
-        "link" : "https://github.com/exiled-scot/React-eCommerce-Storepage",
-        "image" : "http://localhost:3000/static/media/laptop.e034910db6ae582e32a6.jpeg"
+        "name" : "Tattoo Studio",
+        "description" : "Mock business website designed with Figma, built in React",
+        "technologies" : ["React","Figma"],
+        "link" : "https://github.com/exiled-scot/samurai-ink",
+        "image" : "https://github.com/exiled-scot/samurai-ink/blob/main/screenshots/screenshot1.png?raw=true"
     },
    {
         "name" : "Interactive eLibrary",
