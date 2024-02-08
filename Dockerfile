@@ -4,9 +4,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN NODE_OPTIONS=--max-old-space-size=4096 yarn build
-
-RUN yarn install
+RUN yarn install --production
 
 COPY . .
 
