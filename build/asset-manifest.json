@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d95937f.css",
+    "main.js": "/static/js/main.e353871b.js",
+    "static/media/dolphins.mp4": "/static/media/dolphins.bf560d96a56328d8c58e.mp4",
+    "static/media/sailing3.png": "/static/media/sailing3.135f26ba084a38b7afdb.png",
+    "static/media/sailing-vid1.mp4": "/static/media/sailing-vid1.f73f0e8cf84105be0c77.mp4",
+    "static/media/sailing5.png": "/static/media/sailing5.7559057f4442f5196cfd.png",
+    "static/media/laptop.jpeg": "/static/media/laptop.e034910db6ae582e32a6.jpeg",
+    "static/media/Avatar.png": "/static/media/Avatar.76c159c01e51060dcf16.png",
+    "static/media/code.png": "/static/media/code.7db84cd28c559a024f9b.png",
+    "static/media/Kali.png": "/static/media/Kali.7b789bc8c1a10b280c51.png",
+    "static/media/sailing2.png": "/static/media/sailing2.8387a31d59fadfe2222d.png",
+    "static/media/sailing4.png": "/static/media/sailing4.84c5586c47b74b74893c.png",
+    "static/media/login.png": "/static/media/login.cbde65cc8ee642bd6298.png",
+    "static/media/camping1.jpg": "/static/media/camping1.a041601b30250a1e42aa.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.0d95937f.css.map": "/static/css/main.0d95937f.css.map",
+    "main.e353871b.js.map": "/static/js/main.e353871b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d95937f.css",
+    "static/js/main.e353871b.js"
+  ]
+}
