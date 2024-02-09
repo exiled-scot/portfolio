@@ -2,11 +2,13 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY . .
+COPY package*.json ./
 
 RUN yarn install --production
 
-COPY package*.json ./
+COPY . .
+
+RUN yarn build
 
 ENV PORT=3001
 
