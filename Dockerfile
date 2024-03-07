@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN yarn install --production
+RUN npm install
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
 
-ENV PORT=3001
+ENV PORT=3000
 
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
