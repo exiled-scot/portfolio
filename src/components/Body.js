@@ -30,7 +30,7 @@ const Body = () => {
                             </i>{' '}
                         </a>
                         <a
-                            href="https://nihilanth.co.uk/"
+                            href="https://blog.nihilanth.co.uk/"
                             target="_blank"
                             rel="noreferrer"
                             className="icon-link"
