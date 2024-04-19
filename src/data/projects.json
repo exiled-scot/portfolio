@@ -4,20 +4,23 @@
         "description" : "An elearning website built with React and Pocketbase",
         "technologies" : ["React", "Pocketbase"],
         "link" : "https://github.com/exiled-scot/elearning-website",
-        "image" : "https://github.com/exiled-scot/elearning-website/blob/master/screenshots/screenshot2.png?raw=true"
+        "image" : "https://github.com/exiled-scot/elearning-website/blob/master/screenshots/screenshot2.png?raw=true",
+        "project_demo" : "https://learning.nihilanth.co.uk"
     },
     {
         "name" : "Tattoo Studio",
         "description" : "Mock business website designed with Figma, built in React",
         "technologies" : ["React","Figma"],
         "link" : "https://github.com/exiled-scot/samurai-ink",
-        "image" : "https://github.com/exiled-scot/samurai-ink/blob/main/screenshots/screenshot1.png?raw=true"
+        "image" : "https://github.com/exiled-scot/samurai-ink/blob/main/screenshots/screenshot1.png?raw=true",
+        "project_demo" : "https://samurai.nihilanth.co.uk"
     },
    {
         "name" : "Interactive eLibrary",
         "description" : "Built using Next.js and styled with Tailwind. Search for books. ",
         "technologies" : ["NextJS", "Tailwind"],
         "link" : "https://github.com/exiled-scot/Interactive-E-Library-Using-Next.js-and-Tailwind",
-        "image" : "https://raw.githubusercontent.com/exiled-scot/Interactive-E-Library-Using-Next.js-and-Tailwind/main/screenshots/screenshot2.png"
+        "image" : "https://raw.githubusercontent.com/exiled-scot/Interactive-E-Library-Using-Next.js-and-Tailwind/main/screenshots/screenshot2.png",
+        "project_demo" : "https://library.nihilanth.co.uk"
     }
 ]
