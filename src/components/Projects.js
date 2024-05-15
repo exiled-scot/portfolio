@@ -49,8 +49,8 @@ const Projects = () => {
                     <h1 className='title'>
                       <a href={project.link}>{project.name}</a>
                     </h1>
-                    <h3 className='title'>
-                    <a href={project.project_demo}>DEMO</a>
+                    <h3 className='text'>
+                    <a href={project.project_demo}>Demo</a>
                     </h3>
                     <p className='text'>{project.description}</p>
                   </div>
